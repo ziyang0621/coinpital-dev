@@ -1,0 +1,12 @@
+.coin-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem;
+  div {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    color: black;
+  }
+}

@@ -1,0 +1,76 @@
+.landing-search-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 1rem;
+  background-color: #828282;
+  border-radius: 1rem;
+  padding: 2rem;
+  .landing-search-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .landing-search-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .coin-button-group {
+    @media (max-width: $mobile) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      .coin-button {
+        width: 100%;
+      }
+    }
+    @media (min-width: $mobile) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.landing-label-text {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: white;
+}
+
+#currency-input {
+  font-weight: 500;
+  color: black;
+  .select-wrapper {
+    background-color: white;
+    box-shadow: 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.14);
+    .select-dropdown {
+      font-size: 1.5rem;
+    }
+    span {
+      color: black;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+#amount {
+  background-color: white;
+  color: black;
+  font-weight: 500;
+  font-size: 1.5rem;
+  box-shadow: 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.14);
+}
+
+#search-button {
+  margin-top: 1.5rem;
+  background-color: $blue;
+  border-radius: 0.5rem;
+}

@@ -1,0 +1,81 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.6; }
+
+.nav-wrapper {
+  background-color: #0091ea; }
+
+.landing-search-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 1rem;
+  background-color: #828282;
+  border-radius: 1rem;
+  padding: 2rem; }
+  .landing-search-container .landing-search-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start; }
+  .landing-search-container .landing-search-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+  @media (max-width: 600px) {
+    .landing-search-container .coin-button-group {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+      .landing-search-container .coin-button-group .coin-button {
+        width: 100%; } }
+  @media (min-width: 600px) {
+    .landing-search-container .coin-button-group {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap; } }
+
+.landing-label-text {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: white; }
+
+#currency-input {
+  font-weight: 500;
+  color: black; }
+  #currency-input .select-wrapper {
+    background-color: white;
+    box-shadow: 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.14); }
+    #currency-input .select-wrapper .select-dropdown {
+      font-size: 1.5rem; }
+    #currency-input .select-wrapper span {
+      color: black;
+      font-size: 1.5rem; }
+
+#amount {
+  background-color: white;
+  color: black;
+  font-weight: 500;
+  font-size: 1.5rem;
+  box-shadow: 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.14); }
+
+#search-button {
+  margin-top: 1.5rem;
+  background-color: #0091ea;
+  border-radius: 0.5rem; }
+
+.coin-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem; }
+  .coin-button div {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    color: black; }
